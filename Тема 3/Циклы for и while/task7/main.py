@@ -32,4 +32,12 @@ poem = """У лукоморья дуб зелёный;
 Под ним сидел, и кот учёный
 Свои мне сказки говорил."""
 
-# TODO посчитать количество русской буквы "а"
+search = "а"
+count = 0
+
+for letter in list(poem):
+    if letter == search:
+        count += 1
+    continue
+
+print(count)

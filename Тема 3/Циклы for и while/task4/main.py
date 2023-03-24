@@ -1,2 +1,3 @@
 count_stairs = 4
-# TODO распечатать лесенку
+for i in reversed(range(count_stairs)):
+    print("*" * (i+1))
