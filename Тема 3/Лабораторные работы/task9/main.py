@@ -7,4 +7,10 @@ need_money = 0  # количество денег, чтобы прожить 10 
 
 # TODO Оформить решение
 
+increase += 1
+
+for month_num in range(1, months+1):
+    need_money = need_money - (salary - spend)
+    spend = spend * increase
+
 print(round(need_money))
