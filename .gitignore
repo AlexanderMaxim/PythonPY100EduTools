@@ -3,4 +3,5 @@ __init__.py
 *.png
 *.yaml
 *.md
+*.txt
 \tests

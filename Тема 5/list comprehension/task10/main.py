@@ -1,5 +1,5 @@
 def task(words: list) -> list:
-    ...  # TODO перевести слова в верхний регистр
+    return[up.upper() for up in words]  # TODO перевести слова в верхний регистр
 
 
 list_words = [

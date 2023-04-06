@@ -22,5 +22,8 @@ students_list = [
 ]
 
 # TODO посчитать средний возраст
+ages = [student["age"] for student in students_list]
+avg_age = sum(ages) / len(ages)
 
 # TODO распечатать список словарей студентов, возраст которых меньше среднего
+print([student for student in students_list if student["age"] < avg_age])

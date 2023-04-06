@@ -7,3 +7,4 @@ students_dict = {
 }
 
 # TODO найти средний возраст студентов
+print(sum(students_dict.values()) / len(students_dict))

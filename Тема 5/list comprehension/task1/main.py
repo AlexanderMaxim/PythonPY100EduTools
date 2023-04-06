@@ -7,7 +7,7 @@ def list_over_for_loop(n):
 
 
 def over_list_comprehension(n):
-    return []  # TODO записать list comprehension
+    return [pow(n, 2) for n in range(n)]  # TODO записать list comprehension
 
 
 num = 10

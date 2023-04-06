@@ -1,4 +1,4 @@
-# TODO импортировать Counter
+from collections import Counter as count  # TODO импортировать Counter
 
 cart_fruits = [
     'Яблоко', 'Банан', 'Апельсин', 'Яблоко', 'Яблоко', 'Яблоко', 'Банан', 'Апельсин', 'Банан', 'Банан',
@@ -9,3 +9,5 @@ cart_fruits = [
 ]
 
 # TODO подсчитать и распечатать фрукты
+
+print(count(cart_fruits))
