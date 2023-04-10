@@ -3,16 +3,22 @@ from random import randint  # я почитал, но так и не понял,
 
 def get_unique_list_numbers() -> list[int]:  # TODO написать функцию для получения списка уникальных целых чисел
 
-    count = 0
-    list_ = []
+    # count = 0
+    # list_ = []
+    #
+    # while count <= 15:
+    #     num = randint(-10, 10)
+    #     if num not in list_:
+    #         list_.append(num)
+    #         count += 1
+    #
+    # return list_
 
-    while count <= 15:
-        num = randint(-10, 10)
-        if num not in list_:
-            list_.append(num)
-            count += 1
+    num_set = set()
+    while len(num_set) < 15:
+        num_set.add(randint(-10, 10))
 
-    return list_
+    return list(num_set)
 
 
 list_unique_numbers = get_unique_list_numbers()
